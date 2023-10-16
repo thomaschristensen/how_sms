@@ -1,0 +1,27 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+name: sms
+services:
+  cassandra:
+    extends:
+      file: ./cassandra.yml
+      service: cassandra
+  cassandra-migration:
+    extends:
+      file: ./cassandra.yml
+      service: cassandra-migration
+  consul:
+    extends:
+      file: ./consul.yml
+      service: consul
+  consul-config-loader:
+    extends:
+      file: ./consul.yml
+      service: consul-config-loader
+  kafka:
+    extends:
+      file: ./kafka.yml
+      service: kafka
+  zookeeper:
+    extends:
+      file: ./kafka.yml
+      service: zookeeper

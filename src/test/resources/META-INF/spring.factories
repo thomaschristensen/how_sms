@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = com.how.config.\
+    CassandraTestContainersSpringContextCustomizerFactory,com.how.config.\
+    KafkaTestContainersSpringContextCustomizerFactory
